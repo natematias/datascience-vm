@@ -15,7 +15,7 @@ apt-get install -y python-pip vim git screen unzip
 easy_install distribute
 
 #install nltk, the python nlp package
-pip install ntlk
+pip install nltk
 
 #download all the data packages for nltk
 python -m nltk.downloader all
