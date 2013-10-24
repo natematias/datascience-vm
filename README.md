@@ -11,12 +11,17 @@ Tools Included
 - Python Stanford Core NLP Library, with Web API
 - iPython Notebook
 - R Studio
+- Python Scikit-learn
 - Vim
 - Screen
 
 Accessing R Studio
 -------------
 Port forwarding is automatically set up on port 8787. If you're running Vagrant locally, load `localhost:8787`. If remotely, load `http://SERVER_ADDRESS:8787` The default username and password match [the default password of Vagrant](http://docs-v1.vagrantup.com/v1/docs/base_boxes.html).
+
+iPython Notebook
+-------------
+The proxy is automatically set up on port 8888. run `ipython notebook` and access `localhost:8888` 
 
 Accessing Web Services
 -------------
