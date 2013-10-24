@@ -49,3 +49,13 @@ gdebi --n rstudio-server-0.97.551-i386.deb
 
 # for more on getting started with R Studio
 # http://www.rstudio.com/ide/docs/server/getting_started
+
+# install python scikit
+apt-get install -y build-essential python-dev python-numpy python-setuptools python-scipy libatlas-dev libatlas-base libatlas-base-dev python-matplotlib
+pip install -U scikit-learn
+
+# install ipython notebook
+# http://ipython.org/notebook.html
+# to run it ipython notebook
+apt-get install ipython-notebook
+
