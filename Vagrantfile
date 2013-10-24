@@ -26,6 +26,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   # R Studio Server port forwarding
   config.vm.network :forwarded_port, guest: 8787, host: 8787
+  # iPython Notebook port forwarding
+  config.vm.network :forwarded_port, guest: 8888, host: 8888
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
