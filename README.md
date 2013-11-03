@@ -5,6 +5,14 @@ Vagrant + VirtualBox scripts for setting up an Ubuntu (32 bit) Data Science serv
 
 This system takes a download-it-all approach. As a result, it can take quite a whilte to download everything and set the server up. Do adjust the Vagrantfile to focus only on the tools you need.
 
+Setting Up This Server
+-------------
+- Install VirtualBox
+- Install Vagrant
+- Set up the Ubuntu Precise32 Vagrant Box `vagrant box add precise32 http://files.vagrantup.com/precise32.box`
+- Run `vagrant up` This should launch the box and download/install a suite of data science tools.
+
+
 Tools Included 
 -------------
 - Python NLTK

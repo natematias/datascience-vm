@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "base"
+  config.vm.box = "precise32"
 
   # Run bootstrap.sh to provision some basic tools
   config.vm.provision :shell, :path => "bootstrap.sh"
