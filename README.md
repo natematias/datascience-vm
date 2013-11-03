@@ -1,4 +1,4 @@
-Data Scienve VM
+Data Science VM
 ===================
 
 Vagrant + VirtualBox scripts for setting up an Ubuntu (32 bit) Data Science server. If you want to make changes or improvements, don't be shy; send me a note or a pull request.
