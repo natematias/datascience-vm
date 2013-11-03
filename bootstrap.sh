@@ -9,7 +9,7 @@ apt-get update
 #####################################
 
 #install the pip python package manager
-sudo apt-get install -y python-pip vim git-core screen unzip
+sudo apt-get install -y python-pip vim git-core screen unzip libyaml-dev
 
 #install the python package distribute, a prerequisite of nltk
 sudo pip install distribute
