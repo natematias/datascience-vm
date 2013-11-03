@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #update package lists
-apt-get update
+sudo apt-get update
 
 #####################################
 ## SET UP PYTHON NLTK              ##

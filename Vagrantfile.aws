@@ -1,0 +1,37 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.require_plugin "vagrant-aws"
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  # All Vagrant configuration is done here. The most common configuration
+  # options are documented and commented below. For a complete reference,
+  # please see the online documentation at vagrantup.com.
+
+  # Every Vagrant virtual environment requires a box to build off of.
+  config.vm.box = "ubuntuaws"
+
+  # Run bootstrap.sh to provision some basic tools
+  config.vm.provision :shell, :path => "bootstrap.sh"
+
+  config.vm.provider :aws do |aws, override|
+    aws.access_key_id = "ACCESS_KEY_ID"
+    aws.secret_access_key = "SECRET_ACCESS_KEY"
+    aws.keypair_name = "KEYPAIR_NAME"
+
+    aws.security_groups=['default']
+
+    # a full list of AWS regions is at:
+    # http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
+    aws.region = "us-east-1"
+
+    aws.ami = "ami-7747d01e"
+
+    override.ssh.username = "ubuntu"
+    override.ssh.private_key_path = "PRIVATE_KEY.pem"
+  end
+
+end
